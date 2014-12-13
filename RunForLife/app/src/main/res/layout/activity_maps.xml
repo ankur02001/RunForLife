@@ -1,0 +1,17 @@
+<!--
+    activity_maps.xml - RunForLife
+                Source file containing activity_maps xml
+    Language:        Java
+    Platform:        Android SDK
+    Course No.:      CIS-651
+    Assignment No.:  Final Project
+    Author:          Ankur Pandey, SUID: 408067486, apandey@syr.edu
+                    Rupan Talwar, SUID: 402408828, rutalwar@syr.edu
+-->
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/map" tools:context=".MapsActivity"
+    android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+

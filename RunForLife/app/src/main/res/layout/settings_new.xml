@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    settings_new.xml - RunForLife
+                Source file containing settings_new xml
+    Language:        Java
+    Platform:        Android SDK
+    Course No.:      CIS-651
+    Assignment No.:  Final Project
+    Author:          Ankur Pandey, SUID: 408067486, apandey@syr.edu
+                    Rupan Talwar, SUID: 402408828, rutalwar@syr.edu
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFA500"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/Settingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Settings"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#6456648f"
+        android:id="@+id/view3"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:lines="2"
+        android:id="@+id/text2"
+        android:text="Distance:"
+        android:autoLink="all"
+        android:fontFamily="Arial"
+        android:typeface="serif"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="@string/turn_on"
+        android:textOff="@string/turn_off"
+        android:textColor="#000000"
+        android:checked="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:lines="2"
+        android:id="@+id/text3"
+        android:text="Elevation:"
+        android:autoLink="all"
+        android:fontFamily="Arial"
+        android:typeface="serif"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="@string/turn_on2"
+        android:textOff="@string/turn_off2"
+        android:textColor="#000000"
+        android:checked="true"
+        android:layout_gravity="center_horizontal" />
+
+
+    <LinearLayout android:id="@+id/linearLayout5" android:layout_height="250dp" android:layout_width="fill_parent" android:layout_gravity="bottom" android:gravity="bottom">
+        <ImageButton  android:id="@+id/homeImageButton"   android:adjustViewBounds="true" android:maxWidth="42dp" android:maxHeight="42dp" android:scaleType="fitXY"
+            android:layout_marginLeft="3dp" android:layout_weight="1" android:layout_height="85dp" android:layout_width="0dp" android:src="@drawable/home" />
+        <ImageButton  android:id="@+id/userImageButton"  android:visibility="invisible" android:adjustViewBounds="true" android:maxWidth="42dp" android:maxHeight="42dp" android:scaleType="fitXY"
+            android:layout_marginLeft="3dp" android:layout_weight="1" android:layout_height="85dp" android:layout_width="0dp" android:src="@drawable/user" />
+
+        <ImageButton  android:id="@+id/leaderImageButton" android:visibility="invisible"  android:adjustViewBounds="true" android:maxWidth="42dp" android:maxHeight="42dp"  android:scaleType="fitXY"
+            android:layout_marginLeft="3dp" android:layout_weight="1" android:layout_height="85dp" android:layout_width="0dp" android:src="@drawable/leaderboard" />
+    </LinearLayout>
+
+</LinearLayout>

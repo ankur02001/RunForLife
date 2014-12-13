@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    leader_profile_new.xml - RunForLife
+                Source file containing leader_profile_new xml
+    Language:        Java
+    Platform:        Android SDK
+    Course No.:      CIS-651
+    Assignment No.:  Final Project
+    Author:          Ankur Pandey, SUID: 408067486, apandey@syr.edu
+                    Rupan Talwar, SUID: 402408828, rutalwar@syr.edu
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFA500"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/Settingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Leader Board"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:background="#FFA500"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#6456648f"
+        android:id="@+id/view3"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:id="@+id/tableLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/overAllButton">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#6456648f" >
+            <TextView
+                android:id="@+id/textView1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:text="Rank"
+                android:paddingTop="10dp"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView2"
+                android:paddingBottom="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="UserName"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="Calories"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#FFA500"
+            android:visibility="visible"
+            >
+            <TextView
+                android:id="@+id/textView11"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:text="1."
+                android:paddingTop="10dp"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView12"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="Ankur Pandey"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:paddingBottom="10dp"
+                android:paddingLeft="45dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="3.35"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#FFA500"
+            android:visibility="invisible"
+            >
+            <TextView
+                android:id="@+id/textView21"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:text="2."
+                android:paddingTop="10dp"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView22"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="Rupan Talwar"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:paddingBottom="10dp"
+                android:paddingLeft="45dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="3.35"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#FFA500"
+            android:visibility="visible"
+            >
+            <TextView
+                android:id="@+id/textView31"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:text="3."
+                android:paddingTop="10dp"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView32"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="Ankur Pandey"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:paddingBottom="10dp"
+                android:paddingLeft="45dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="3.35"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#FFA500"
+            android:visibility="visible"
+            >
+            <TextView
+                android:id="@+id/textView41"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:text="4."
+                android:paddingTop="10dp"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView42"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="Rupan Talwar"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:paddingBottom="10dp"
+                android:paddingLeft="45dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="3.35"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#FFA500"
+            android:visibility="visible"
+            >
+            <TextView
+                android:id="@+id/textView51"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:text="5."
+                android:paddingTop="10dp"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView52"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="Ankur Pandey"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:paddingBottom="10dp"
+                android:paddingLeft="45dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="3.35"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#FFA500"
+            android:visibility="visible"
+            >
+            <TextView
+                android:id="@+id/textView71"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:text="6."
+                android:paddingTop="10dp"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView72"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="Rupan Talwar"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView73"
+                android:paddingBottom="10dp"
+                android:paddingLeft="45dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="3.35"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#FFA500"
+            android:visibility="visible"
+            >
+            <TextView
+                android:id="@+id/textView81"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:text="7."
+                android:paddingTop="10dp"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView82"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="Rupan Talwar"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView83"
+                android:paddingBottom="10dp"
+                android:paddingLeft="45dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="3.35"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#FFA500"
+            >
+            <TextView
+                android:id="@+id/textView91"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:text="8."
+                android:paddingTop="10dp"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <View style="@style/Divider" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView92"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="Rupan Talwar"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView93"
+                android:paddingBottom="10dp"
+                android:paddingLeft="45dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="3.35"
+                android:textSize="20sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout android:id="@+id/linearLayout5" android:layout_height="170dp" android:layout_width="fill_parent" android:layout_gravity="bottom" android:gravity="bottom">
+        <ImageButton  android:id="@+id/homeImageButton"   android:adjustViewBounds="true" android:maxWidth="42dp" android:maxHeight="42dp" android:scaleType="fitXY"
+            android:layout_marginLeft="3dp" android:layout_weight="1" android:layout_height="85dp" android:layout_width="0dp" android:src="@drawable/home" />
+
+        <ImageButton  android:id="@+id/userImageButton"   android:adjustViewBounds="true" android:maxWidth="42dp" android:maxHeight="42dp" android:scaleType="fitXY"
+            android:layout_marginLeft="3dp" android:layout_weight="1" android:layout_height="85dp" android:layout_width="0dp" android:src="@drawable/user" />
+
+        <ImageButton  android:id="@+id/leaderImageButton"   android:adjustViewBounds="true" android:maxWidth="42dp" android:maxHeight="42dp"  android:scaleType="fitXY"
+            android:layout_marginLeft="3dp" android:layout_weight="1" android:layout_height="85dp" android:layout_width="0dp" android:src="@drawable/leaderboard" />
+    </LinearLayout>
+
+</LinearLayout>

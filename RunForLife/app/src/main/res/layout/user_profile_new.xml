@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+user_profile_new.xml - RunForLife
+            Source file containing user_profile_new xml
+Language:        Java
+Platform:        Android SDK
+Course No.:      CIS-651
+Assignment No.:  Final Project
+Author:          Ankur Pandey, SUID: 408067486, apandey@syr.edu
+                Rupan Talwar, SUID: 402408828, rutalwar@syr.edu
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFA500"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/Settingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="User Profile"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#6456648f"
+        android:id="@+id/view3"
+        />
+
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:src="@drawable/user2"
+        android:scaleType="fitCenter"
+        android:layout_height="180px"
+        android:layout_width="250px"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView" />
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="Evelyn Cordner"
+        android:layout_above="@+id/userCity"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        />
+    <TextView
+        android:id="@+id/userCity"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="Syracuse NY"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#6456648f"
+        android:id="@+id/view1"/>
+    <TextView
+        android:id="@+id/Settingtext2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Latest Activity"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#6456648f"
+        android:textStyle="normal"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout android:id="@+id/linearLayout3" android:layout_height="50dp" android:layout_width="fill_parent" android:layout_gravity="bottom" android:gravity="bottom">
+        <TextView
+            android:id="@+id/distanceValue"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="0.000 Dist(km)"
+            />
+        <TextView
+            android:id="@+id/paceValue"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingRight="45dp"
+            android:text="0.00 Speed(mps)"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_height="40dp" android:layout_width="fill_parent" android:layout_gravity="bottom" android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/caloriesValue"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="0.00 Cal"
+            />
+
+        <TextView
+            android:id="@+id/elevationValue"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingRight="45dp"
+            android:text="0.000 Elev(m)" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/view11" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#6456648f"
+        android:id="@+id/view" />
+    <TextView
+        android:id="@+id/Settingtext3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Total Activity"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#6456648f"
+        android:textStyle="normal"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_height="50dp" android:layout_width="fill_parent" android:layout_gravity="bottom" android:gravity="bottom">
+        <TextView
+            android:id="@+id/distanceValue1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="0.000 Dist(km)"
+            />
+        <TextView
+            android:id="@+id/paceValue1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingRight="45dp"
+            android:text="0.00 Speed(mps)"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/linearLayout4" android:layout_height="40dp" android:layout_width="fill_parent" android:layout_gravity="bottom" android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/caloriesValue1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="0.00 Cal"
+            />
+
+        <TextView
+            android:id="@+id/elevationValue1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingRight="45dp"
+            android:text="0.000 Elev(m)" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/linearLayout5" android:layout_height="130dp" android:layout_width="fill_parent" android:layout_gravity="bottom" android:gravity="bottom">
+        <ImageButton  android:id="@+id/homeImageButton"   android:adjustViewBounds="true" android:maxWidth="42dp" android:maxHeight="42dp" android:scaleType="fitXY"
+            android:layout_marginLeft="3dp" android:layout_weight="1" android:layout_height="85dp" android:layout_width="0dp" android:src="@drawable/home" />
+
+        <ImageButton  android:id="@+id/userImageButton"   android:adjustViewBounds="true" android:maxWidth="42dp" android:maxHeight="42dp" android:scaleType="fitXY"
+            android:layout_marginLeft="3dp" android:layout_weight="1" android:layout_height="85dp" android:layout_width="0dp" android:src="@drawable/user" />
+
+        <ImageButton  android:id="@+id/leaderImageButton"   android:adjustViewBounds="true" android:maxWidth="42dp" android:maxHeight="42dp"  android:scaleType="fitXY"
+            android:layout_marginLeft="3dp" android:layout_weight="1" android:layout_height="85dp" android:layout_width="0dp" android:src="@drawable/leaderboard" />
+    </LinearLayout>
+
+</LinearLayout>

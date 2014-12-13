@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    signsignup.xml - RunForLife
+                Source file containing signsignup xml
+    Language:        Java
+    Platform:        Android SDK
+    Course No.:      CIS-651
+    Assignment No.:  Final Project
+    Author:          Ankur Pandey, SUID: 408067486, apandey@syr.edu
+                    Rupan Talwar, SUID: 402408828, rutalwar@syr.edu
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:id="@+id/signsignupview">
+    <TextView
+        android:id="@+id/Settingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageButton
+        android:id="@+id/homeImageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        android:src="@drawable/home" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#6456648f"
+        android:layout_above="@+id/txtusername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/txtusername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="#FFA500"
+        android:layout_below="@+id/Settingtext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtusername"
+        android:inputType="textEmailAddress" />
+    <TextView
+        android:id="@+id/txtpassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:textColor="#FFA500"
+        android:text="Password" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtpassword"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:textColor="#FFA500"
+        android:textStyle="bold"
+        android:text="Login" />
+    <View
+        android:id="@+id/markersec"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#6456648f"
+        android:layout_below="@+id/login"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/txtusername2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFA500"
+        android:layout_below="@+id/markersec"
+        android:text="Name" />
+    <EditText
+        android:id="@+id/username2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtusername2"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/txtpasswdname2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFA500"
+        android:layout_below="@+id/username2"
+        android:text="Password" />
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtpasswdname2"
+        android:inputType="textPassword" />
+    <TextView
+        android:id="@+id/txtemail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFA500"
+        android:layout_below="@+id/password2"
+        android:text="Email" />
+    <EditText
+        android:id="@+id/emailfill"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtemail"
+        android:inputType="textEmailAddress" />
+    <TextView
+        android:id="@+id/txtcity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFA500"
+        android:layout_below="@+id/emailfill"
+        android:text="City" />
+    <EditText
+        android:id="@+id/addressfill"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcity"
+        android:inputType="textPostalAddress" />
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:textColor="#FFA500"
+        android:textStyle="bold"
+        android:layout_below="@+id/addressfill"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
